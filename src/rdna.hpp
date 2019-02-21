@@ -22,5 +22,9 @@ string randDNA(int seed, string bases, int n){
 		dnaStr = dnaStr + bases.at(uniform(engine));
 	}
 
+	if (bases == ""){
+		dnaStr = "";
+	}
+
 	return dnaStr;
 }
