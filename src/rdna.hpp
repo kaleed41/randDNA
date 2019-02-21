@@ -14,7 +14,7 @@ string randDNA(int seed, string bases, int n){
 	string dnaStr = "";// returns data
 
 	int min = 0;//minimum number to generate
-	int max = bases.length -1;
+	int max = bases.length() - 1;
 
 	uniform_int_distribution<> uniform(min, max);
 
